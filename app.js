@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 
 // Initialize server information
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Set up ejs, static directory, and body-parser
 app.set('view engine', 'ejs');
